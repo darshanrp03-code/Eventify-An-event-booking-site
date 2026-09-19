@@ -33,6 +33,7 @@
         </div>
 
     </nav>
+    <h3 class="bookingtitle">Please fill the below form to complete <span> booking</span></h3>
     <div class="bookingform" id="bookingform">
     <form id="bookingform">
      <fieldset>
@@ -47,9 +48,28 @@
                 <td><input type="text" id="Lname" name="name" required size="20" placeholder="Enter Last Name"></td>
             </tr>
             <tr>
-                <td><label>Address:</label></td>
-                <td><textarea name="address" rows="3" cols="20" placeholder="Enter Address"></textarea></td>
+                <td ><label>Address:</label></td>
+                <td ><textarea name="address" rows="4" cols="10" placeholder="Enter Address"></textarea></td>
             </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" name="email" required size="20" placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <td><label>Venue:</label></td>
+                <td><input list="venue" class="Venuelist" placeholder="Select Venue"></td>
+                <datalist id="venue">
+                <option value="Mumbai"></option>
+                <option value="Delhi"></option>
+                <option value="Ahmedabad"></option>
+                <option value="Udaipur"></option>
+                <option value="Hyderabad"></option>
+                <option value="Banglore"></option>
+                </datalist>
+            </tr>
+
+          
+
         </table>
      </fieldset>
 </div>

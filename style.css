@@ -100,7 +100,7 @@ nav{
     left: 3%;
     text-align: left;
     top: 180px;
-    font-size: 55px;
+    font-size: clamp(35px, 4vw, 55px);
     font-family: "Space grotesk", sans-serif;
     animation: textLeft 1s ease 0.5s both;
 }

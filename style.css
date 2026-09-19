@@ -315,10 +315,12 @@ input::placeholder,textarea::placeholder{
     font-family: "Space grotesk", sans-serif;
 }
 
-.latentvid{
+.latentvid {
     position: absolute;
-    top: 270px; 
+    top: 270px;
     height: 450px;
-    left: 250px;
+    left: 50%;
     border: 5px solid #9A63D1;
+    transform: translateX(-50%);
+    width: 800px;
 }

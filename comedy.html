@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comedy | Eventify</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            Event<span>ify</span>
+        </a>
+
+        <div class="NavigationButtons">
+
+            <a href="index.html" class="homeButton">Home</a>
+            <a href="events.html" class="eventsButton">Events</a>
+            <a href="about.html" class="aboutButton">About</a>
+            <a href="contact.html" class="contactButton">Contact Us</a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="video-container">
+
+        <video autoplay class="samayvid" id="showVideo" controls>
+
+            <source src="samay vid/samay vid.mp4" type="video/mp4">
+
+        </video>
+
+
+        <img src="stillalive.jpg" id="showPoster">
+
+
+    </div>
+
+
+    <script>
+
+        const video = document.getElementById("showVideo");
+        const poster = document.getElementById("showPoster");
+
+        video.addEventListener("ended", function() {
+
+            video.style.display = "none";
+            poster.style.display = "block";
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -173,7 +173,7 @@ h3{
 
 
 .event-card {
-    flex: 0 0 470px;
+    flex: 0 0 450px;
 
     background-color: rgba(33, 21, 46, 0.85);
 
@@ -190,7 +190,7 @@ h3{
 
 
 .event-card img {
-    width: 100%;
+    width: 120%;
     height: 300px;
 
     object-fit: cover;
@@ -224,3 +224,8 @@ h3{
 
 }
 
+.samayvid{
+    position: absolute;
+    top: 120px; 
+    height: 450px;
+}

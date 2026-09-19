@@ -188,17 +188,22 @@ nav{
 }
 
 .samayvid{
-    position: absolute;
-    top: 270px; 
+   position: absolute;
+    top: 270px;
     height: 450px;
-    left: 270px;
+    left: 50%;
     border: 5px solid #9A63D1;
+    transform: translateX(-50%);
+    width: 800px;
 }
 
 .title{
     position: absolute;
     top: 120px;
-    left: 510px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    text-align: center;
     font-size: 60px;
     font-family: "Space grotesk", sans-serif;
 }
@@ -206,7 +211,10 @@ nav{
 .author{
     position: absolute;
     top: 200px;
-    left: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    text-align: center;
     font-size: 30px;
     font-family: "Space grotesk", sans-serif;
 }
@@ -214,8 +222,10 @@ nav{
 .about{
     position: absolute;
     top: 750px;
-    left: 290px;
-    width: 750px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    text-align: center;
     text-align: justify;
     font-size: 25px;
     font-family: "Space grotesk", sans-serif;
@@ -225,7 +235,10 @@ nav{
 .bookButton {
     position: absolute;
     top: 1030px;
-    left: 560px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    text-align: center;
     padding: 15px 30px;
     font-size: 30px;
     font-family: "Space grotesk", sans-serif;
@@ -310,7 +323,10 @@ input::placeholder,textarea::placeholder{
 .latenttitle{
     position: absolute;
     top: 120px;
-    left: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    text-align: center;
     font-size: 60px;
     font-family: "Space grotesk", sans-serif;
 }

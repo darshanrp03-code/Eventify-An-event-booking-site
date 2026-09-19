@@ -30,7 +30,7 @@ nav{
 .logo{
     position: absolute;
     top: 5px;
-    left: 20px;
+    left: 3%;
     font-size: 50px;
     font-family: "Space grotesk", sans-serif;
     text-decoration: none;
@@ -81,7 +81,7 @@ nav{
 
 .tagline{
     position: absolute;
-    left: 20px;
+    left: 3%;
     text-align: left;
     top: 120px;
     font-size: 25px;
@@ -97,7 +97,7 @@ nav{
 
 .bigtagline{
     position: absolute;
-    left: 20px;
+    left: 3%;
     text-align: left;
     top: 180px;
     font-size: 55px;

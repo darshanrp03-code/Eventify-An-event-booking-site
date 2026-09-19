@@ -91,7 +91,7 @@ nav{
     gap: 30px;
 }
 
-h5{
+.tagline{
     position: absolute;
     left: 20px;
     text-align: left;
@@ -120,7 +120,7 @@ h5{
     font-family: "Space grotesk", sans-serif;
 }
 
-h3{
+.bigtagline{
     position: absolute;
     left: 20px;
     text-align: left;
@@ -173,7 +173,7 @@ h3{
 
 
 .event-card {
-    flex: 0 0 450px;
+    flex: 0 0 500px;
 
     background-color: rgba(33, 21, 46, 0.85);
 
@@ -226,6 +226,64 @@ h3{
 
 .samayvid{
     position: absolute;
-    top: 120px; 
+    top: 270px; 
     height: 450px;
+    left: 270px;
+    border: 5px solid #9A63D1;
+}
+
+.title{
+    position: absolute;
+    top: 120px;
+    left: 510px;
+    font-size: 60px;
+    font-family: "Space grotesk", sans-serif;
+}
+
+.author{
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    font-size: 30px;
+    font-family: "Space grotesk", sans-serif;
+}
+
+.about{
+    position: absolute;
+    top: 750px;
+    left: 290px;
+    width: 750px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: "Space grotesk", sans-serif;
+    background-color: rgba(33, 21, 46, 0.85); 
+}
+
+.bookButton {
+    position: absolute;
+    top: 1030px;
+    left: 560px;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-family: "Space grotesk", sans-serif;
+    color: white;
+    background-color: #9A63D1;
+    border:  5px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.bookingform {
+    position: absolute;
+    top: 140px;
+    left: 280px;
+    width: 800px;
+    padding: 20px;
+    background-color: rgba(33, 21, 46, 0.85);
+    border: 2px solid #9A63D1;
+    border-radius: 10px;
+    color: white;
+    font-family: "Space grotesk", sans-serif;
 }

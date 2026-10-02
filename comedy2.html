@@ -1,59 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Comedy | Eventify</title>
+    <link rel="stylesheet" href="style3.css">
 
-    <link rel="stylesheet" href="style.css">
+    <style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: rgb(154, 99, 209);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .video {
+            text-align: center;
+            margin: 30px;
+        }
+
+        video {
+            width: 700px;
+            border: 3px solid rgb(154, 99, 209);
+        }
+
+        .about {
+            width: 800px;
+            margin: 30px auto;
+            font-size: 25px;
+            text-align: justify;
+        }
+
+        .book {
+            display: block;
+            width: 150px;
+            margin: 30px auto;
+            padding: 12px;
+            text-align: center;
+            background-color: rgb(154, 99, 209);
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+     <script type="text/javascript">
+        function age(){
+            alert("This Event is for Adults Only. Please ensure you are 18+ before booking.");
+        }
+    </script>
+
 </head>
 
 <body>
 
-    <nav>
+    <div class="top">
 
         <a href="index.html" class="logo">
             Event<span>ify</span>
         </a>
 
-        <div class="NavigationButtons">
-
-            <a href="index.html" class="homeButton">Home</a>
-            <a href="events.html" class="eventsButton">Events</a>
-            <a href="about.html" class="aboutButton">About</a>
-            <a href="contact.html" class="contactButton">Contact Us</a>
-
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+    
         </div>
 
-    </nav>
-    <h3 class="latenttitle">INDIA'S GOT LATENT </h3><h5 class="author">By: Samay Raina</h5>
-
-    <div class="video1">
-
-        <video autoplay class="latentvid"controls>
-        <source src="latentvid/latentvid.mp4" type="video/mp4">
-        </video>
     </div>
-    <p class="about">India’s Got Latent -
 
-Get ready for an unpredictable night of comedy, chaos, and completely unfiltered entertainment!  India’s Got Latent brings together hilarious moments, unexpected performances, and the unique humor that made the show a huge talking point.
+    <h1>INDIA'S GOT LATENT</h1>
 
-Come for the laughs, stay for the madness, and experience an evening where anything can happen! 
+    <h3>Live Comedy Show</h3>
 
-</p>
+    <div class="video">
 
-<a href="booking.html" class="bookButton">Book Now</a>
+        <video controls autoplay>
+            <source src="latentvid/latentvid.mp4" type="video/mp4" autoplay>
+        </video>
+
+    </div>
+
+    <p class="about">
+       Step into the unpredictable world of India's Got Latent, the talent-comedy show created and hosted by Samay Raina. Featuring performers with unusual, surprising, and entertaining talents, the show combines live performances with spontaneous humour and a panel of guests and judges. Its unique format challenges contestants to judge their own performances while facing the panel's reactions and scores. Expect unexpected moments, sharp comedy, and a completely unpredictable evening of entertainment on 15 November 2026.
 
 
-
-
+    <a href="booking.html" class="book" onclick="age()">Book Now</a>
 
 </body>
 

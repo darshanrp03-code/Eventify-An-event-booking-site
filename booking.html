@@ -1,78 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Comedy | Eventify</title>
+    <title>Booking | Eventify</title>
+    <link rel="stylesheet" href="style3.css">
 
-    <link rel="stylesheet" href="style.css">
+    <style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: rgb(154, 99, 209);
+        }
+
+        h3 {
+            color: rgb(154, 99, 209);
+            border-bottom: 1px solid rgb(154, 99, 209);
+            padding-bottom: 8px;
+        }
+
+        .form-box {
+            width: 450px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: rgb(33, 21, 46);
+            border: 2px solid rgb(154, 99, 209);
+            border-radius: 10px;
+        }
+
+        .form-box p {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .form-box input {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-box select {
+            width: 422px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-box .btn {
+            display: block;
+            width: 150px;
+            margin: 30px auto 0 auto;
+            padding: 12px;
+            background-color: rgb(154, 99, 209);
+            color: white;
+            border: none;
+            font-size: 18px;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-    <nav>
+    <div class="top">
 
         <a href="index.html" class="logo">
             Event<span>ify</span>
         </a>
 
-        <div class="NavigationButtons">
-
-            <a href="index.html" class="homeButton">Home</a>
-            <a href="events.html" class="eventsButton">Events</a>
-            <a href="about.html" class="aboutButton">About</a>
-            <a href="contact.html" class="contactButton">Contact Us</a>
-
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+   
         </div>
 
-    </nav>
-    <h3 class="bookingtitle">Please fill the below form to complete your <span> booking</span></h3>
-    <div class="bookingform" id="bookingform">
-    <form id="bookingform">
-     <fieldset>
-        <legend>Booking Details</legend>
-        <table>
-            <tr>
-                <td><label for="lblFname">First Name:</label></td>
-                <td><input type="text" id="Fname" name="name" required size="20" placeholder="Enter First Name"></td>
-            </tr>
-            <tr>
-                <td><label for="lblLname">Last Name:</label></td>
-                <td><input type="text" id="Lname" name="name" required size="20" placeholder="Enter Last Name"></td>
-            </tr>
-            <tr>
-                <td ><label>Address:</label></td>
-                <td ><textarea name="address" rows="4" cols="10" placeholder="Enter Address"></textarea></td>
-            </tr>
-            <tr>
-                <td><label>Email:</label></td>
-                <td><input type="email" name="email" required size="20" placeholder="Enter Email"></td>
-            </tr>
-            <tr>
-                <td><label>Venue:</label></td>
-                <td><input list="venue" class="Venuelist" placeholder="Select Venue"></td>
-                <datalist id="venue">
-                <option value="Mumbai"></option>
-                <option value="Delhi"></option>
-                <option value="Ahmedabad"></option>
-                <option value="Udaipur"></option>
-                <option value="Hyderabad"></option>
-                <option value="Banglore"></option>
-                </datalist>
-            </tr>
+    </div>
 
-          
+    <h1>Book Your Tickets</h1>
 
-        </table>
-     </fieldset>
-</div>
+    <div class="form-box">
+
+        <form action="index.html">
+
+            <h3>Event Details</h3>
+
+            <p>Select Event</p>
+            <select name="event">
+                <option>Comedy - Still Alive (12 Oct)</option>
+                <option>Music - Diwari (31 Oct)</option>
+                <option>Talk Show - Lavari (2 Nov)</option>
+                <option>Comedy (15 Nov)</option>
+                <option>Music - Arijit Singh (29 Oct)</option>
+                <option>Music - Shreya (23 Oct)</option>
+            </select>
+
+            <p>Number of Tickets</p>
+            <input type="number" name="tickets" min="1" max="10" required>
+
+            <h3>Personal Details</h3>
+
+            <p>Full Name</p>
+            <input type="text" name="name" required>
+
+            <p>Email</p>
+            <input type="email" name="email" required>
+
+            <p>Address</p>
+            <textarea name="address" rows="4" cols="50" required></textarea>
+
+            <p>Aadhar Card Number</p>
+            <input type="text" name="aadhar" maxlength="12" required>
+
+            <h3>Payment Details</h3>
+
+            <p>Name on Card</p>
+            <input type="text" name="cardname" required>
+
+            <p>Card Number</p>
+            <input type="text" name="cardnumber" maxlength="16" required>
+
+            <p>Expiry Date (MM/YY)</p>
+            <input type="text" name="expiry" maxlength="5" required>
+
+            <p>CVV</p>
+            <input type="password" name="cvv" maxlength="3" required>
+
+            <input type="submit" value="Confirm Booking" class="btn">
+
+        </form>
+
+    </div>
 
 </body>
+
 </html>

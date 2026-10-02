@@ -48,7 +48,11 @@
         }
 
     </style>
-
+    <script type="text/javascript">
+        function age(){
+            alert("This Event is for Adults Only. Please ensure you are 18+ before booking.");
+        }
+    </script>
 </head>
 
 <body>
@@ -62,7 +66,6 @@
         <div class="links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
         </div>
 
     </div>
@@ -96,7 +99,7 @@
         show you won't want to miss.
     </p>
 
-    <a href="booking.html" class="book">Book Now</a>
+    <a href="booking.html" class="book" onclick="age()">Book Now</a>
 
 </body>
 

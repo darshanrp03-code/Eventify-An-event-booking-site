@@ -1,0 +1,42 @@
+
+body {
+    margin: 0;
+    background-image: url("bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.top {
+    height: 60px;
+    background-color: rgba(33, 21, 46, 0.585);
+    border-bottom: 3px solid rgb(131, 131, 132);
+    padding: 10px 40px;
+    
+}
+
+.logo {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo span {
+    color: rgb(154, 99, 209);
+}
+
+.links {
+    float: right;
+    margin-top: 15px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}

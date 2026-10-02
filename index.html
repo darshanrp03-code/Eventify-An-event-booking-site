@@ -1,191 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="script.js" defer></script>
+
+    <title>Eventify - Home</title>
+
+    <link rel="stylesheet" href="style3.css"></link>
+
+    <style>
+
+        .main {
+            width: 1150px;
+            margin: 30px auto;
+        }
+
+        .tagline {
+            font-size: 22px;
+            color: rgb(195, 195, 195);
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        .tagline span {
+            color: rgb(154, 99, 209);
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        h1 span {
+            color: rgb(154, 99, 209);
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 360px);
+            gap: 30px;
+        }
+
+        .event-card {
+            background-color: rgb(33, 21, 46);
+            border: 2px solid rgb(154, 99, 209);
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .event-info {
+            padding: 12px 16px;
+        }
+
+        .event-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .event-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(154, 99, 209);
+        }
+
+    </style>
+
 </head>
+
 <body>
-    <audio hidden autoplay class="welcome">
-    <source src="welcome.mp3.mp3" type="audio/mp3">
-    </audio>
-    <header>
-    <nav>
-    
-    <a href="index.html" class="logo">Event<span>ify</span></a>
-    <div class="NavigationButtons">
-    <a href="index.html" class="homeButton">Home</a>
-    <a href="#events" class="eventsButton">Events</a>
-    <a href="about.html" class="aboutButton">About</a>
-    <a href="contact.html" class="contactButton">Contact Us</a>
-    </div>
 
-    </nav>
-    </header>
-    <br>
-    <h5 class="tagline">
-       Make your events <br>
-       unforgettable with Event<span class="text">ify</span>!
-    </h5>
-    <br>
-    <br>
-    <section id="events">
-    <h3 class="bigtagline">
-        Experience Events <span class="text2">Worth Remembering</span>:<br>
-        
-    </h3>
-    </section>
-    <br>
-     <div class="eventsMenu" >
-         <button class="arrow-left" onclick="moveLeft()">&#10094;</button>
+    <div class="top">
 
-        <div class="eventsTrack">
-            
+        <a href="index.html" class="logo">
+            Event<span>ify</span>
+        </a>
 
+        <div class="links">
 
-            
-            <a href="comedy.html" class="event-card">
-
-                <img src="samay.jpg" >
-                <div class="event-info">
-                    <p>Comedy • 12 Oct</p>
-                    <p>₹1299 Onwards</p>
-                </div>
-
-            </a>
-
-
-        
-            <a href="music.html" class="event-card">
-
-                <img src="diwari.jpg" >
-                <div class="event-info">
-                    <p>Music • 31 Oct</p>
-                    <p>₹999 Onwards</p>
-                </div>
-
-            </a>
-
-
-            <a href="talk.html" class="event-card">
-
-                <img src="lavari.jpg" >
-
-                <div class="event-info">
-                    <p>Talk Show • 2 Nov</p>
-                    <p>₹899 Onwards</p>
-                </div>
-
-            </a>
-
-
-            
-            <a href="comedy2.html" class="event-card">
-
-                <img src="latent.jpg" >
-
-                <div class="event-info">
-                    <p>Comedy • 15 Nov</p>
-                    <p>₹1499 Onwards</p>
-                </div>
-            </a>
-
-              <a href="music2.html" class="event-card">
-
-                <img src="arijit.jpg">
-
-                <div class="event-info">
-                      <p>Music • 29 Oct</p>
-                    <p>₹799 Onwards</p>
-                </div>
-            </a>
-            <a href="music3.html" class="event-card">
-
-                <img src="shreya.jpg" >
-
-                <div class="event-info">
-                     <p>Music • 23 Oct</p>
-                    <p>₹699 Onwards</p>
-                </div>
-
-            </a>
-             <a href="comedy.html" class="event-card">
-
-                <img src="samay.jpg" >
-
-                <div class="event-info">
-                    <p>Comedy • 12 Oct</p>
-                    <p>₹1299 Onwards</p>
-                </div>
-
-            </a>
-
-
-            <a href="music.html" class="event-card">
-
-                <img src="diwari.jpg" >
-
-                <div class="event-info">
-                    <p>Music • 31 Oct</p>
-                    <p>₹999 Onwards</p>
-                </div>
-
-            </a>
-
-
-            <a href="talk.html" class="event-card">
-
-                <img src="lavari.jpg" >
-
-                <div class="event-info">
-                    <p>Talk Show • 2 Nov</p>
-                    <p>₹899 Onwards</p>
-                </div>
-
-            </a>
-
-
-            <a href="comedy2.html" class="event-card">
-
-                <img src="latent.jpg" >
-
-                <div class="event-info">
-                    <p>Comedy • 15 Nov</p>
-                    <p>₹1499 Onwards</p>
-                </div>
-
-            </a>
-            <a href="music2.html" class="event-card">
-
-                <img src="arijit.jpg">
-
-                <div class="event-info">
-                    <p>Music • 29 Oct</p>
-                    <p>₹799 Onwards</p>
-                
-                </div>
-            </a>
-            <a href="music3.html" class="event-card">
-
-                <img src="shreya.jpg" >
-
-                <div class="event-info">
-                     <p>Music • 23 Oct</p>
-                    <p>₹699 Onwards</p>
-                </div>
-            </a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
 
         </div>
 
     </div>
 
 
+    <div class="main">
 
-</section>
+        <p class="tagline">
+            Make your events <br>
+            unforgettable with Event<span>ify</span>!
+        </p>
+
+        <h1>
+            Experience Events
+            <span>Worth Remembering</span>
+        </h1>
+
+
+        <div class="events-grid">
+
+            <a href="comedy.html" class="event-card">
+
+                <img src="samay.jpg" alt="Samay Raina">
+
+                <div class="event-info">
+                    <p class="event-title">Comedy • 12 Oct</p>
+                    <p class="event-price">₹1299 Onwards</p>
+                </div>
+
+            </a>
+
+
+            <a href="music.html" class="event-card">
+
+                <img src="diwari.jpg" alt="Music Event">
+
+                <div class="event-info">
+                    <p class="event-title">Music • 31 Oct</p>
+                    <p class="event-price">₹999 Onwards</p>
+                </div>
+
+            </a>
+
+
+            <a href="talk.html" class="event-card">
+
+                <img src="lavari.jpg" alt="Talk Show">
+
+                <div class="event-info">
+                    <p class="event-title">Talk Show • 2 Nov</p>
+                    <p class="event-price">₹899 Onwards</p>
+                </div>
+
+            </a>
+
+
+            <a href="comedy2.html" class="event-card">
+
+                <img src="latent.jpg" alt="Comedy Event">
+
+                <div class="event-info">
+                    <p class="event-title">Comedy • 15 Nov</p>
+                    <p class="event-price">₹1499 Onwards</p>
+                </div>
+
+            </a>
+
+
+            <a href="music2.html" class="event-card">
+
+                <img src="arijit.jpg" alt="Arijit Singh">
+
+                <div class="event-info">
+                    <p class="event-title">Music • 29 Oct</p>
+                    <p class="event-price">₹799 Onwards</p>
+                </div>
+
+            </a>
+
+
+            <a href="music3.html" class="event-card">
+
+                <img src="shreya.jpg" alt="Shreya Ghoshal">
+
+                <div class="event-info">
+                    <p class="event-title">Music • 23 Oct</p>
+                    <p class="event-price">₹699 Onwards</p>
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
+
